@@ -1,18 +1,18 @@
 //
-//  ZHYShareView_masterTests.m
-//  ZHYShareView-masterTests
+//  DemoTests.m
+//  DemoTests
 //
-//  Created by zhan on 2017/6/5.
-//  Copyright © 2017年 zhan. All rights reserved.
+//  Created by ZHAN on 2017/6/6.
+//  Copyright © 2017年 ZHAN. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ZHYShareView_masterTests : XCTestCase
+@interface DemoTests : XCTestCase
 
 @end
 
-@implementation ZHYShareView_masterTests
+@implementation DemoTests
 
 - (void)setUp {
     [super setUp];

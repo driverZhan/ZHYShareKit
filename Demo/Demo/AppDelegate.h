@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  ZHYShareView-master
+//  Demo
 //
-//  Created by zhan on 2017/6/5.
-//  Copyright © 2017年 zhan. All rights reserved.
+//  Created by ZHAN on 2017/6/6.
+//  Copyright © 2017年 ZHAN. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

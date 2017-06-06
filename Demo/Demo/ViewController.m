@@ -1,13 +1,14 @@
 //
 //  ViewController.m
-//  ZHYShareView-master
+//  Demo
 //
-//  Created by zhan on 2017/6/5.
-//  Copyright © 2017年 zhan. All rights reserved.
+//  Created by ZHAN on 2017/6/6.
+//  Copyright © 2017年 ZHAN. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "ZHYShareView.h"
+
 @interface ViewController ()
 
 @end
@@ -19,8 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (IBAction)show
+- (IBAction)show:(id)sender
 {
     ZHYShareItem *item1 = [ZHYShareItem initWithImage:@"" title:@"cell1" type:@1 selectedHandler:^(id value){
         NSLog(@"item4%@",value);
@@ -62,7 +62,7 @@
         NSLog(@"item4%@",value);
     }];
     
-    [ZHYShareView showViewWithItems:@[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item7,item8]];
+    [ZHYShareView showViewWithItems:@[item1,item2,item3,item4,item5,item6,item7,item8,item9] pages:YES];
 }
 
 - (void)didReceiveMemoryWarning {
