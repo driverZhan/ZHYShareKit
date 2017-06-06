@@ -15,7 +15,7 @@
 		7F08E55E1EE5B5D7008840E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F08E55C1EE5B5D7008840E1 /* LaunchScreen.storyboard */; };
 		7F08E5691EE5B5D7008840E1 /* ZHYShareView_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08E5681EE5B5D7008840E1 /* ZHYShareView_masterTests.m */; };
 		7F08E5741EE5B5D7008840E1 /* ZHYShareView_masterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08E5731EE5B5D7008840E1 /* ZHYShareView_masterUITests.m */; };
-		7F08E5851EE5B60E008840E1 /* ZHYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08E5841EE5B60E008840E1 /* ZHYShareView.m */; };
+		7F32AF961EE673F700A5CD87 /* ZHYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32AF951EE673F700A5CD87 /* ZHYShareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		7F08E56F1EE5B5D7008840E1 /* ZHYShareView-masterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZHYShareView-masterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F08E5731EE5B5D7008840E1 /* ZHYShareView_masterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHYShareView_masterUITests.m; sourceTree = "<group>"; };
 		7F08E5751EE5B5D7008840E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F08E5831EE5B60E008840E1 /* ZHYShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYShareView.h; sourceTree = "<group>"; };
-		7F08E5841EE5B60E008840E1 /* ZHYShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYShareView.m; sourceTree = "<group>"; };
+		7F32AF941EE673F700A5CD87 /* ZHYShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYShareView.h; sourceTree = "<group>"; };
+		7F32AF951EE673F700A5CD87 /* ZHYShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYShareView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		7F08E54D1EE5B5D7008840E1 /* ZHYShareView-master */ = {
 			isa = PBXGroup;
 			children = (
-				7F08E5811EE5B60E008840E1 /* ZHYShareView */,
+				7F32AF921EE673F700A5CD87 /* ZHYShareView */,
 				7F08E5511EE5B5D7008840E1 /* AppDelegate.h */,
 				7F08E5521EE5B5D7008840E1 /* AppDelegate.m */,
 				7F08E5541EE5B5D7008840E1 /* ViewController.h */,
@@ -144,19 +144,20 @@
 			path = "ZHYShareView-masterUITests";
 			sourceTree = "<group>";
 		};
-		7F08E5811EE5B60E008840E1 /* ZHYShareView */ = {
+		7F32AF921EE673F700A5CD87 /* ZHYShareView */ = {
 			isa = PBXGroup;
 			children = (
-				7F08E5821EE5B60E008840E1 /* classes */,
+				7F32AF931EE673F700A5CD87 /* classes */,
 			);
-			path = ZHYShareView;
+			name = ZHYShareView;
+			path = ../../ZHYShareView;
 			sourceTree = "<group>";
 		};
-		7F08E5821EE5B60E008840E1 /* classes */ = {
+		7F32AF931EE673F700A5CD87 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				7F08E5831EE5B60E008840E1 /* ZHYShareView.h */,
-				7F08E5841EE5B60E008840E1 /* ZHYShareView.m */,
+				7F32AF941EE673F700A5CD87 /* ZHYShareView.h */,
+				7F32AF951EE673F700A5CD87 /* ZHYShareView.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -296,7 +297,7 @@
 			files = (
 				7F08E5561EE5B5D7008840E1 /* ViewController.m in Sources */,
 				7F08E5531EE5B5D7008840E1 /* AppDelegate.m in Sources */,
-				7F08E5851EE5B60E008840E1 /* ZHYShareView.m in Sources */,
+				7F32AF961EE673F700A5CD87 /* ZHYShareView.m in Sources */,
 				7F08E5501EE5B5D7008840E1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
