@@ -17,7 +17,7 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIButton *imageView;
 @property (nonatomic, strong) ZHYShareItem *sItem;
-@property (nonatomic, strong) void(^handler)(id value);
+@property (nonatomic, strong) void(^handler)();
 @end
 
 @implementation ZHYShareItemCell
@@ -79,7 +79,7 @@
 - (void)buttonClicked:(UIButton *)sender
 {
     if (self.handler) {
-        self.handler(self.sItem.type);
+        self.handler();
         [[NSNotificationCenter defaultCenter] postNotificationName:SHAREVIEW_DISMISS_NOTIFICATION object:nil];
     }
 }

@@ -11,11 +11,9 @@
 @interface ZHYShareItem : NSObject
 @property (nonatomic, strong) NSString *image;
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, assign) id type;
-@property (nonatomic, strong) void (^selectedHandler)(id value);
+@property (nonatomic, strong) void (^selectedHandler)();
 
 + (instancetype)initWithImage:(NSString *)image
                         title:(NSString *)title
-                         type:(id)type
-              selectedHandler:(void(^)(id value))handler;
+              selectedHandler:(void(^)())handler;
 @end
