@@ -20,4 +20,6 @@
 #define itemCountAtRow 4
 #define pageSize 8
 
+#define showHeight(s) s > itemCountAtRow ? containerHeight : containerHeight - ((containerHeight - cancelButtonHeight) / rowCount)
+
 #endif /* ZHYHeader_h */

@@ -17,16 +17,18 @@
 @property (nonatomic, strong) ZHYCollectionViewHorizontalLayout *layout;
 @property (nonatomic, strong) NSArray *cellItems;
 @property (nonatomic, strong) UIPageControl *pageControl;
+
 @end
 
 @implementation ZHYShareContainer
 
 + (instancetype)initContainerWithItems:(NSArray *)items pages:(BOOL)showPages
 {
+    
     ZHYShareContainer *container = [[ZHYShareContainer alloc] initWithFrame:CGRectMake(0,
                                                                                        MAIN_SCREEN_HEIGHT,
                                                                                        MAIN_SCREEN_WIDTH,
-                                                                                       containerHeight)];
+                                                                                       showHeight(items.count))];
     NSMutableArray *array = [NSMutableArray arrayWithArray:items];
     if (showPages) {
         if (items.count % pageSize != 0) {
@@ -38,6 +40,7 @@
     }
     
     container.cellItems = array;
+//    container.collectionView.frame = CGRectMake(CGRectGetMinX(container.collectionView.frame), CGRectGetMinY(container.collectionView.frame), CGRectGetWidth(container.collectionView.frame), showHeight(items.count));
     [container configPageControl];
     return container;
 }

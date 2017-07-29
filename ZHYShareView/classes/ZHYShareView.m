@@ -14,6 +14,7 @@
 @property (nonatomic, strong) ZHYShareContainer *container;
 @property (nonatomic, strong) UIView *markLayer;
 @property (nonatomic, assign) BOOL showfullPage;
+@property (nonatomic, assign) float showHeight;
 @end
 @implementation ZHYShareView
 
@@ -22,6 +23,7 @@
     if ([super initWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT)]) {
         self.items = items;
         self.showfullPage = showPages;
+        self.showHeight = showHeight(items.count);
         [self initUserInterface];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismiss) name:SHAREVIEW_DISMISS_NOTIFICATION object:nil];
     }
@@ -44,7 +46,7 @@
 
 - (void)showAnimation {
     [UIView animateWithDuration:0.3 animations:^{
-        self.container.transform = CGAffineTransformMakeTranslation(0, -containerHeight);
+        self.container.transform = CGAffineTransformMakeTranslation(0, -self.showHeight);
     }];
 }
 

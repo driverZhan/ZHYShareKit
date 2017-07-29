@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'ZHYShareKit'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'simple share kit'
   s.homepage     = 'https://github.com/driverZhan/ZHYShareKit'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
