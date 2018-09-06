@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ZHYShareItem.h"
 
-@interface ZHYShareContainer : UIToolbar
+@interface ZHYShareContainer : UIView
 + (instancetype)initContainerWithItems:(NSArray *)items pages:(BOOL)showPages;
 @end
